@@ -11,6 +11,6 @@ class User extends Model
 
     public function cars()
     {
-        return $this->hasMany(user_id);
+        return $this->hasMany('App\Entity\Car');
     }
 }

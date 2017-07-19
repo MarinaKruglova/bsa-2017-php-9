@@ -11,6 +11,6 @@ class Car extends Model
 
     public function user()
     {
-        return $this->belongsTo(id);
+        return $this->belongsTo('App\Entity\User');
     }
 }
