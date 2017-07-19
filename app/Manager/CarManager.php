@@ -44,6 +44,11 @@ class CarManager implements CarManagerContract
 
     public function deleteCar(int $carId)
     {
-
+        $car = $this->findById($carId);
+        if ($car !== null) {
+            $car->delete();
+        } else {
+            return;
+        }
     }
 }
